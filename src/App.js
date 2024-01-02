@@ -5,6 +5,7 @@ import Sort from "./components/Sort";
 import Categories from "./components/Categories";
 import PizzaBlock from "./components/PizzaBlock";
 
+import pizzas from "./assets/constants/pizzas.json";
 import "./scss/app.scss";
 
 function App() {
@@ -19,10 +20,12 @@ function App() {
           </div>
           <h2 className="content__title">Все пиццы</h2>
           <div className="content__items">
-            <PizzaBlock 
-            title="Чизбургер-пицца"
-            price={395}
-            />
+            {pizzas.map((obj, index) => (
+              <PizzaBlock
+                key={index}
+                {...obj}
+              />
+            ))}
           </div>
         </div>
       </div>
