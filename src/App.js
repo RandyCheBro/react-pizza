@@ -22,7 +22,7 @@ function App() {
           <div className="content__items">
             {pizzas.map((obj, index) => (
               <PizzaBlock
-                key={index}
+                key={obj.id}
                 {...obj}
               />
             ))}
