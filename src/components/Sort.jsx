@@ -1,13 +1,18 @@
 import React from "react";
 
-function Sort() {
+function Sort({ handleChangeSort, sort }) {
   const [isOpen, setIsOpen] = React.useState(false);
-  const [selected, setSelected] = React.useState(0);
-  const list = ["популярности", "цене", "алфавиту"];
-  const sortName = list[selected]
+  const list = [
+    "популярности(↑)",
+    "популярности(↓)",
+    "цене(↑)",
+    "цене(↓)",
+    "алфавиту",
+  ];
+  const sortName = list[sort];
 
   const handleChangeFilter = (index) => {
-    setSelected(index);
+    handleChangeSort(index);
     setIsOpen(false);
   };
 
@@ -37,8 +42,8 @@ function Sort() {
             {list.map((item, index) => (
               <li
                 key={item}
-                onClick={()=> handleChangeFilter(index)}
-                className={selected === index ? "active" : ""}
+                onClick={() => handleChangeFilter(index)}
+                className={sort === index ? "active" : ""}
               >
                 {item}
               </li>

@@ -2,16 +2,15 @@ import React from "react";
 
 import { categories } from "../assets/constants/categories";
 
-function Categories() {
-  const [activeIndex, setActiveIndex] = React.useState(0);
+function Categories({categoryId, handleChangeCategory}) {
 
   return (
     <div className="categories">
       <ul>
         {categories.map((value, index) => (
           <li
-            onClick={() => setActiveIndex(index)}
-            className={activeIndex === index ? "active" : ""}
+            onClick={() => handleChangeCategory(index)}
+            className={categoryId === index ? "active" : ""}
             key={index}
           >
             {value}
