@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Проект: React-Pizza
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Превью проекта](https://github.com/RandyCheBro/imgs-for-README/blob/main/react-pizza.png)
 
-## Available Scripts
+## Обзор:
 
-In the project directory, you can run:
+**Проект React-Pizza - это небольшой интернет магазин спортивных кроссовок. В проекте реализованo:**
 
-### `npm start`
+- Адаптивная flex-box и grid layout верстка.
+- Обращение к бэкенду с помошью fetch и Axios-запросов для получения данных: всех пицц, закладок, корзины и оформленных заказов.
+- Маршрутизация с помощью React Router v6.
+- Отрисовка фейковых товаров, во время ожидания ответа от удаленного сервера, с помощью React Skeleton.
+- Поиск пицц по их названию.
+- Сортировка пицц по цене, алфавиту и рейтингу в порядке возрастания и убывания.
+- Фильтрация по категориям.
+- Паганиция страниц с помощью библиотеки React-paginate.
+- Задержка отправки запроса через строку поиска с помощью библиотеки lodash и метода debounce.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Статус: В разработке.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### _Планируется:_
 
-### `npm test`
+-добавить функционал добавления пицц в корзину с помощью Redux Toolkit. Отображение их суммарной стоимости.
+-добавить типизацию с помощью TypeScript
+-оптимизация проекта.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Стэк:
 
-### `npm run build`
+https://cdn.icon-icons.com/icons2/2415/PNG/512/redux_original_logo_icon_146365.png
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<div>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Sass.svg" title="SCSS" alt="SCSS" width="40" height="40"/>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>
 
-### `npm run eject`
+  <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"/>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/redux_original_logo_icon_146365.png" title="Redux Toolkit" alt="Redux Toolkit" width="40" height="40"/>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/git/git-original.svg" title="Git" alt="Git" width="40" height="40"/>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/figma/figma-original.svg" title="Figma" alt="Figma" width="40" height="40"/>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/vscode/vscode-original.svg" title="VSCode" alt="VSCode" width="40" height="40"/>
+</div>
 
-## Learn More
+## Ссылки на развернутый проект:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Ссылка на репозиторий в Pages](https://randychebro.github.io/react-pizza/)
